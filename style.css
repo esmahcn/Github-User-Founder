@@ -10,6 +10,7 @@ body {
     color: #e0e0e0;
 }
 
+/* Search box styling */
 .github-search {
     background: #1e1e1e;
     padding: 20px 30px;
@@ -17,7 +18,8 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
     margin-bottom: 40px;
     text-align: center;
-    width: 320px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .github-search h1 {
@@ -33,10 +35,10 @@ body {
     border: 1px solid #444;
     border-radius: 6px;
     margin-bottom: 12px;
-    box-sizing: border-box;
     background-color: #2c2c2c;
     color: #e0e0e0;
     transition: border-color 0.2s ease;
+    box-sizing: border-box;
 }
 
 .github-search input::placeholder {
@@ -51,7 +53,7 @@ body {
 }
 
 .github-search button {
-    width: 30%;
+    width: 50%;
     padding: 10px 12px;
     background-color: #238636;
     border: none;
@@ -67,9 +69,10 @@ body {
     background-color: #2ea043;
 }
 
+/* Profile card styling */
 .profile-card {
     background: #1e1e1e;
-    max-width: 360px;
+    max-width: 400px;
     width: 100%;
     padding: 25px 30px;
     border-radius: 12px;
@@ -121,4 +124,17 @@ body {
 
 .profile-card a:hover {
     background-color: #2ea043;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+
+    .github-search,
+    .profile-card {
+        padding: 20px;
+    }
+
+    .github-search h1 {
+        font-size: 1.4rem;
+    }
 }
